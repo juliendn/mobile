@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/drawer_item_icon"
+
+        android:layout_width="@dimen/list_with_icon_text_padding"
+        android:layout_height="match_parent"
+
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:paddingBottom="@dimen/list_big_vertical_padding"
+        android:paddingEnd="?attr/listPreferredItemPaddingRight"
+        android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?attr/listPreferredItemPaddingRight"
+        android:paddingStart="?attr/listPreferredItemPaddingLeft"
+        android:paddingTop="@dimen/list_big_vertical_padding"
+
+        android:scaleType="fitCenter"
+        tools:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/drawer_item_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_toEndOf="@id/drawer_item_icon"
+
+        android:layout_toRightOf="@id/drawer_item_icon"
+        android:ellipsize="end"
+
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="Sausage biltong turducken pork loin. Pig meatloaf tongue filet mignon, brisket t-bone pork belly bacon tri-tip beef venison landjaeger. Prosciutto capicola short loin frankfurter flank." />
+</merge>

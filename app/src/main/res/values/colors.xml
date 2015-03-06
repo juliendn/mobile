@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5677fc</color>
+    <color name="primaryDark">#455ede</color>
+    <color name="accent">#FBC02D</color>
+    <color name="status_good">#8bc34a</color>
+    <color name="status_minor">#ffc107</color>
+    <color name="status_major">#e51c23</color>
+    <color name="account_background">#81d4fa</color>
+
+    <color name="fedora_freedom">#3c6eb4</color>
+    <color name="fedora_friends">#db3279</color>
+    <color name="fedora_features">#e59728</color>
+    <color name="fedora_first">#79db32</color>
+
+</resources>

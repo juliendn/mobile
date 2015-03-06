@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/newsfeed_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/list_big_vertical_padding"
+        android:paddingLeft="@dimen/list_big_vertical_padding"
+        android:paddingRight="@dimen/list_big_vertical_padding"
+        android:paddingStart="@dimen/list_big_vertical_padding">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newsfeed_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.NavigationDrawerActivity"
+            tools:listitem="@layout/layout_newsfeed_item">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/newsfeed_error"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/error_fail_query_newsfeeds"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/newsfeed_progress"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+</FrameLayout>
+

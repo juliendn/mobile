@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Title" />
+    <PreferenceScreen
+        android:key="key1"
+        android:title="action1"
+        android:summary="Bacon ipsum dolor amet beef ribs pancetta pork belly capicola short loin hamburger andouille. Pastrami short ribs ball tip beef shank kevin. Shank kevin capicola beef ribs t-bone ground round pancetta ham hock jerky. Beef ribs salami pork chop shank hamburger porchetta, boudin venison.">
+        <intent
+            android:action="android.settings.SETTINGS"
+            android:targetPackage="org.fedoraproject.mobile" />
+    </PreferenceScreen>
+</PreferenceScreen>

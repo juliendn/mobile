@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="list_header_and_footer_margin">8dp</dimen>
+    <dimen name="list_with_icon_text_padding">72dp</dimen>
+    <dimen name="list_big_vertical_padding">16dp</dimen>
+    <dimen name="infra_status_width">8dp</dimen>
+</resources>

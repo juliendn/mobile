@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/infra_status_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="org.fedoraproject.mobile.fragments.InfraStatusFragment">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/infra_status_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.NavigationDrawerActivity">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        android:id="@+id/infra_status_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_big_vertical_padding"
+        android:background="?attr/listChoiceBackgroundIndicator"
+        app:cardElevation="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/infra_status_summary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+            tools:background="#0f0"
+            tools:text="All systems go" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/infra_status_error"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/error_fail_query_infra_status"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/infra_status_progress"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+</FrameLayout>

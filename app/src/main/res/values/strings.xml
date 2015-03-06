@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fedora Mobile</string>
+    <string name="title_activity_main">Fedora Mobile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_my_account">My account</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_packages_updates">Packages updates</string>
+    <string name="drawer_fedora_people">Fedora people</string>
+    <string name="drawer_newsfeed">Newsfeed</string>
+    <string name="drawer_infrastructure_status">Infrastructure status</string>
+    <string name="drawer_preferences">Preferences</string>
+    <string name="error_fail_query_newsfeeds">Fail to query newsfeed.</string>
+    <string name="error_not_implemented_yet">Not implemented yet.</string>
+    <string name="error_fail_query_infra_status">Fail to query infrastructure status</string>
+    <string name="drawer_badges">Badges</string>
+    <string name="account_label">Fedora</string>
+    <string name="account_send">Login</string>
+    <string name="account_default_name">Click to sign in</string>
+    <string name="account_username">Username</string>
+    <string name="account_password">Password</string>
+    <string name="account_cancel">Cancel</string>
+    <string name="title_activity_fedoauth">Login Fedora</string>
+    <string name="title_service_fedoauth">Fedora login service</string>
+    <string name="error_fail_query_leaderboard">Fail to query leaderboard</string>
+    <string name="leaderboard_badges">%d badges</string>
+    <string name="badges_earned">%1$s has earned %2$d badges (%3$2f%% of total)</string>
+    <string name="error_fail_query_badges">Fail to query badges for %s</string>
+
+</resources>

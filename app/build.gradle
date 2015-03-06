@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "org.fedoraproject.mobile"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 4
+        versionName "Angry metalhead"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../release.jks")
+            storePassword "37JC_877493LZFb"
+            keyAlias "fedora-mobile"
+            keyPassword "00|Ur1~H@+3C+UE"
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField 'boolean', 'PICASSO_LOG', 'true'
+            buildConfigField 'boolean', 'PICASSO_INDICATOR', 'false'
+
+            versionNameSuffix ' debug'
+            applicationIdSuffix '.debug'
+        }
+        release {
+            buildConfigField 'boolean', 'PICASSO_LOG', 'false'
+            buildConfigField 'boolean', 'PICASSO_INDICATOR', 'false'
+
+            debuggable false
+            signingConfig signingConfigs.release
+
+            //jniDebuggable false
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        abortOnError true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Android support libraries
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:cardview-v7:21.0.0'
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+
+    // retrofit & gson for network requests
+    compile 'com.squareup.retrofit:retrofit:1.7.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+
+    // picasso for resource loading
+    compile 'com.squareup.picasso:picasso:2.3.4'
+
+}
